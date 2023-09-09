@@ -1,0 +1,11 @@
+<p>order works! {{z()}}</p>
+<div>
+  <a href="javascript:" (click)="onChangeMultiplyValue()">Multiply Value</a>
+</div>
+
+<div class="orders">
+  <div class="order" *ngFor="let order of orders" [routerLink]="['/orders', order.id]">
+    <span>{{order.code}}</span>
+    <span>{{order.clientName}}</span>
+  </div>
+</div>
