@@ -7,5 +7,6 @@
   <div class="order" *ngFor="let order of orders" [routerLink]="['/orders', order.id]">
     <span>{{order.code}}</span>
     <span>{{order.clientName}}</span>
+    <span>{{order.address}}</span>
   </div>
 </div>
